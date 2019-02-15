@@ -1,0 +1,2895 @@
+Model {
+  Name			  "ClassBAmpDesign"
+  Version		  9.0
+  SavedCharacterEncoding  "windows-1252"
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.6"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+    NumProvidedFunctions    0
+    NumRequiredFunctions    0
+    NumResetEvents	    0
+    HasInitializeEvent	    0
+    HasTerminateEvent	    0
+    IsExportFunctionModel   0
+    NumParameterArguments   0
+    NumExternalFileReferences 21
+    ExternalFileReference {
+      Reference		      "fl_lib/Electrical/Electrical Sources/DC Voltage Source"
+      Path		      "ClassBAmpDesign/-5 V"
+      SID		      "77"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "fl_lib/Electrical/Electrical Sources/DC Voltage Source"
+      Path		      "ClassBAmpDesign/5 V "
+      SID		      "76"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "elec_lib/Passive Devices/Capacitor"
+      Path		      "ClassBAmpDesign/C1"
+      SID		      "16"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "fl_lib/Electrical/Electrical Sensors/Current Sensor"
+      Path		      "ClassBAmpDesign/Current Sensor"
+      SID		      "59"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "fl_lib/Electrical/Electrical Elements/Electrical Reference"
+      Path		      "ClassBAmpDesign/Electrical  Reference1"
+      SID		      "44"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "elec_lib/Semiconductor\nDevices/NPN Bipolar\nTransistor"
+      Path		      "ClassBAmpDesign/NPN Bipolar Transistor "
+      SID		      "56"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "fl_lib/Electrical/Electrical Sensors/Current Sensor"
+      Path		      "ClassBAmpDesign/Output Current Sensor1"
+      SID		      "63"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "fl_lib/Electrical/Electrical Sensors/Voltage Sensor"
+      Path		      "ClassBAmpDesign/Output Voltage Sensor1"
+      SID		      "64"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "elec_lib/Semiconductor\nDevices/PNP Bipolar\nTransistor"
+      Path		      "ClassBAmpDesign/PNP  Bipolar Transistor"
+      SID		      "57"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "nesl_utility/PS-Simulink\nConverter"
+      Path		      "ClassBAmpDesign/PS-Simulink Converter"
+      SID		      "33"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "nesl_utility/PS-Simulink\nConverter"
+      Path		      "ClassBAmpDesign/PS-Simulink Converter4"
+      SID		      "61"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "nesl_utility/PS-Simulink\nConverter"
+      Path		      "ClassBAmpDesign/PS-Simulink Converter5"
+      SID		      "66"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "nesl_utility/PS-Simulink\nConverter"
+      Path		      "ClassBAmpDesign/PS-Simulink Converter6"
+      SID		      "75"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "elec_lib/Passive Devices/Resistor"
+      Path		      "ClassBAmpDesign/R Load "
+      SID		      "58"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "elec_lib/Passive Devices/Resistor"
+      Path		      "ClassBAmpDesign/R1"
+      SID		      "36"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "elec_lib/Passive Devices/Resistor"
+      Path		      "ClassBAmpDesign/R2 "
+      SID		      "37"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "elec_lib/Passive Devices/Resistor"
+      Path		      "ClassBAmpDesign/R3"
+      SID		      "38"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "elec_lib/Passive Devices/Resistor"
+      Path		      "ClassBAmpDesign/R4"
+      SID		      "39"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "nesl_utility/Solver\nConfiguration"
+      Path		      "ClassBAmpDesign/Solver Configuration"
+      SID		      "1"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "fl_lib/Electrical/Electrical Sensors/Voltage Sensor"
+      Path		      "ClassBAmpDesign/Voltage Sensor"
+      SID		      "60"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "elec_lib/Sources/Voltage Source"
+      Path		      "ClassBAmpDesign/Voltage Source 3 V @ 1000 Hz"
+      SID		      "24"
+      Type		      "LIBRARY_BLOCK"
+    }
+    OrderedModelArguments   1
+  }
+  LogicAnalyzerGraphicalSettings ""
+  LogicAnalyzerPlugin	  "on"
+  LogicAnalyzerSignalOrdering ""
+  DiagnosticSuppressor	  "on"
+  SuppressorTable	  "22 serialization::archive 11 0 6 0 0 0 8 0"
+  CustomCodeFunctionData  ""
+  SLCCPlugin		  "on"
+  slprops.hdlmdlprops {
+    $PropName		    "HDLParams"
+    $ObjectID		    1
+    Array {
+      Type		      "Cell"
+      Dimension		      2
+      Cell		      "HDLSubsystem"
+      Cell		      "$bdroot"
+      PropName		      "mdlProps"
+    }
+  }
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime off
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  UserBdParams		  "PhysicalModelingChecksum;PhysicalModelingParameterChecksum;PhysicalModelingProducts"
+  LastSavedArchitecture	  "win64"
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    2
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      3
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [-6.0, -6.0, 1549.0, 837.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[0]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[9]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[0]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		6
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[3752.0, 1777.0]
+	ZoomFactor		[0.79999999999999993]
+	Offset			[-82.2229036935072, -136.1649710321314]
+      }
+      Object {
+	$PropName		"DockComponentsInfo"
+	$ObjectID		7
+	$ClassName		"Simulink.DockComponentInfo"
+	Type			"GLUE2:PropertyInspector"
+	ID			"Property Inspector"
+	Visible			[0]
+	CreateCallback		""
+	UserData		""
+	Floating		[0]
+	DockPosition		"Right"
+	Width			[256]
+	Height			[192]
+      }
+      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAADtAP///wAAAAEAAAAAAAAAAPwCA"
+      "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
+      "QBjAHQAbwByAAAAAAD/////AAAAYwD///8AAA8AAAAHIAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
+      "////wEAAAEL/////wAAAAAAAAAA/////wEAAAHa/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAALl/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAap/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
+    }
+  }
+  HideAutomaticNames	  on
+  PhysicalModelingChecksum "3639871278"
+  PhysicalModelingParameterChecksum "3491599853"
+  PhysicalModelingProducts "SimElectronics|Simscape"
+  Created		  "Wed Feb 13 18:55:39 2019"
+  Creator		  "justi"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "justi"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed Feb 13 20:54:34 2019"
+  RTWModifiedTimeStamp	  471991546
+  ModelVersionFormat	  "1.%<AutoIncrement:6>"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "disabled"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  PortDataTypeDisplayFormat "AliasTypeOnly"
+  ShowEditTimeErrors	  on
+  ShowEditTimeWarnings	  off
+  ShowEditTimeAdvisorChecks off
+  ShowPortUnits		  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  VariantCondition	  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ShowVisualizeInsertedRTB on
+  ShowMarkup		  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  BlockVariantConditionDataTip off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  FunctionConnectors	  off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  VisualizeLoggedSignalsWhenLoggingToFile off
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    8
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "ClassBAmpDesign"
+    overrideMode_	    [0U]
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "ClassBAmpDesign"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      []
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  OrderedModelArguments	  on
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      9
+      Version		      "1.17.1"
+      DisabledProps	      []
+      Description	      ""
+      Array {
+	Type			"Handle"
+	Dimension		11
+	Simulink.SolverCC {
+	  $ObjectID		  10
+	  Version		  "1.17.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  StartTime		  "0.0"
+	  StopTime		  ".1"
+	  AbsTol		  "1e-3"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  EnableMultiTasking	  on
+	  ConcurrentTasks	  off
+	  Solver		  "VariableStepAuto"
+	  SolverName		  "VariableStepAuto"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverInfoToggleStatus  off
+	  IsAutoAppliedInSIP	  off
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	  SampleTimeProperty	  []
+	  DecoupledContinuousIntegration off
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  11
+	  Version		  "1.17.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "10000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Dataset"
+	  SignalLoggingSaveFormat "Dataset"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  VisualizeSimOutput	  on
+	  StreamToWorkspace	  off
+	  StreamVariableName	  "streamout"
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	  LoggingToFile		  off
+	  DatasetSignalFormat	  "timeseries"
+	  LoggingFileName	  "out.mat"
+	  LoggingIntervals	  "[-inf, inf]"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  12
+	  Version		  "1.17.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  Description		  ""
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  DefaultParameterBehavior "Tunable"
+	  UseDivisionForNetSlopeComputation "off"
+	  UseFloatMulNetSlope	  off
+	  DefaultUnderspecifiedDataType	"double"
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  CachingGlobalReferences off
+	  GlobalBufferReuse	  on
+	  StrengthReduction	  off
+	  AdvancedOptControl	  ""
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  PassReuseOutputArgsThreshold 12
+	  ExpressionDepthLimit	  128
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ActiveStateOutputEnumStorageType "Native Integer"
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "off"
+	  AccelVerboseBuild	  off
+	  OptimizeBlockOrder	  "off"
+	  OptimizeDataStoreBuffers on
+	  BusAssignmentInplaceUpdate on
+	  DifferentSizesBufferReuse off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  13
+	  Version		  "1.17.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "UseOnlyExistingSharedCode"
+	    PropName		    "DisabledProps"
+	  }
+	  Description		  ""
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Simplified"
+	  MergeDetectMultiDrivingBlocksExec "error"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "none"
+	  InheritedTsInSrcMsg	  "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  ExportedTasksRateTransMsg "none"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "error"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  UseOnlyExistingSharedCode "error"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "error"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  AllowSymbolicDim	  off
+	  RowMajorDimensionSupport off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "none"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  ChecksumConsistencyForSSReuse	"none"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  SymbolicDimMinMaxWarning "warning"
+	  LossOfSymbolicDimsSimulationWarning "warning"
+	  LossOfSymbolicDimsCodeGenerationWarning "error"
+	  SymbolicDimsDataTypeCodeGenerationDiagnostic "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnreachableExecutionPathDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	  SFOutputUsedAsStateInMooreChartDiag "error"
+	  SFTemporalDelaySmallerThanSampleTimeDiag "warning"
+	  SFSelfTransitionDiag	  "warning"
+	  SFExecutionAtInitializationDiag "none"
+	  SFMachineParentedDataDiag "warning"
+	  IntegerSaturationMsg	  "warning"
+	  AllowedUnitSystems	  "all"
+	  UnitsInconsistencyMsg	  "warning"
+	  AllowAutomaticUnitConversions	on
+	  RCSCRenamedMsg	  "warning"
+	  RCSCObservableMsg	  "warning"
+	  ForceCombineOutputUpdateInSim	off
+	  UnitDatabase		  ""
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  14
+	  Version		  "1.17.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  64
+	  ProdBitPerSizeT	  64
+	  ProdBitPerPtrDiffT	  64
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "Float"
+	  ProdIntDivRoundTo	  "Zero"
+	  ProdEndianess		  "LittleEndian"
+	  ProdWordSize		  64
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "Intel->x86-64 (Windows64)"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetBitPerSizeT	  32
+	  TargetBitPerPtrDiffT	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	  UseEmbeddedCoderFeatures on
+	  UseSimulinkCoderFeatures on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  15
+	  Version		  "1.17.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  EnableRefExpFcnMdlSchedulingChecks on
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelDependencies	  ""
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel on
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  16
+	  Version		  "1.17.1"
+	  DisabledProps		  []
+	  Description		  ""
+	  SimCustomSourceCode	  ""
+	  SimCustomHeaderCode	  ""
+	  SimCustomInitializer	  ""
+	  SimCustomTerminator	  ""
+	  SimReservedNameArray	  []
+	  SimUserSources	  ""
+	  SimUserIncludeDirs	  ""
+	  SimUserLibraries	  ""
+	  SimUserDefines	  ""
+	  SimCustomCompilerFlags  ""
+	  SimCustomLinkerFlags	  ""
+	  SFSimEcho		  on
+	  SimCtrlC		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	  SimGenImportedTypeDefs  off
+	  ModelFunctionsGlobalVisibility "on"
+	  CompileTimeRecursionLimit 50
+	  EnableRuntimeRecursion  on
+	  MATLABDynamicMemAlloc	  on
+	  MATLABDynamicMemAllocThreshold 65536
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  17
+	  Version		  "1.17.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    16
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    Cell		    "GenerateMissedCodeReplacementReport"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  HardwareBoard		  "None"
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  PackageName		  ""
+	  TemplateMakefile	  "grt_default_tmf"
+	  PostCodeGenCommand	  ""
+	  Description		  ""
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  RTWBuildHooks		  []
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  CustomSourceCode	  ""
+	  CustomHeaderCode	  ""
+	  CustomInclude		  ""
+	  CustomSource		  ""
+	  CustomLibrary		  ""
+	  CustomDefine		  ""
+	  CustomLAPACKCallback	  ""
+	  CustomFFTCallback	  ""
+	  CustomInitializer	  ""
+	  CustomTerminator	  ""
+	  Toolchain		  "Automatically locate an installed toolchain"
+	  BuildConfiguration	  "Faster Builds"
+	  CustomToolchainOptions  []
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  GenerateMissedCodeReplacementReport off
+	  RTWCompilerOptimization "off"
+	  ObjectivePriorities	  []
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  SharedConstantsCachingThreshold 1024
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      18
+	      Version		      "1.17.1"
+	      Array {
+		Type			"Cell"
+		Dimension		28
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"ParameterTuningSideEffectCode"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"CustomSymbolStrUtil"
+		Cell			"ReqsInCode"
+		Cell			"CustomUserTokenString"
+		Cell			"CustomSymbolStrModelFcn"
+		Cell			"CustomSymbolStrEmxType"
+		Cell			"CustomSymbolStrEmxFcn"
+		PropName		"DisabledProps"
+	      }
+	      Description	      ""
+	      Comment		      ""
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      CommentStyle	      "Auto"
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      MangleLength	      1
+	      SharedChecksumLength    8
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrModelFcn "$R$N"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      CustomSymbolStrUtil     "$N$C"
+	      CustomSymbolStrEmxType  "emxArray_$M$N"
+	      CustomSymbolStrEmxFcn   "emx$M$N"
+	      CustomUserTokenString   ""
+	      CustomCommentsFcn	      ""
+	      DefineNamingRule	      "None"
+	      DefineNamingFcn	      ""
+	      ParamNamingRule	      "None"
+	      ParamNamingFcn	      ""
+	      SignalNamingRule	      "None"
+	      SignalNamingFcn	      ""
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      StateflowObjectComments on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifierFile  ""
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	      ReservedNameArray	      []
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      19
+	      Version		      "1.17.1"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"GenerateAllocFcn"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"ExistingSharedCode"
+		Cell			"RemoveDisableFunc"
+		Cell			"RemoveResetFunc"
+		PropName		"DisabledProps"
+	      }
+	      Description	      ""
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      GenFloatMathFcnCalls    "NOT IN USE"
+	      TargetLangStandard      "C89/C90 (ANSI)"
+	      CodeReplacementLibrary  "None"
+	      UtilityFuncGeneration   "Auto"
+	      MultiwordTypeDef	      "System defined"
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      InferredTypesCompatibility off
+	      ExistingSharedCode      ""
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      CodeInterfacePackaging  "Nonreusable function"
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      RemoveDisableFunc	      off
+	      RemoveResetFunc	      off
+	      SupportVariableSizeSignals off
+	      ParenthesesLevel	      "Nominal"
+	      CastingMode	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    on
+	      AutosarCompliant	      off
+	      MDXCompliant	      off
+	      GRTInterface	      off
+	      GenerateAllocFcn	      off
+	      UseToolchainInfoCompliant	on
+	      GenerateSharedConstants on
+	      CoderGroups	      []
+	      AccessMethods	      []
+	      LookupTableObjectStructAxisOrder "1,2,3,4,..."
+	      LUTObjectStructOrderExplicitValues "Size,Breakpoints,Table"
+	      LUTObjectStructOrderEvenSpacing "Size,Breakpoints,Table"
+	      ArrayLayout	      "Column-major"
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeMexArgs	      ""
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	      MultiInstanceErrorCode  "Error"
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	SlCovCC.ConfigComp {
+	  $ObjectID		  20
+	  Version		  "1.17.1"
+	  DisabledProps		  []
+	  Description		  "Simulink Coverage Configuration Component"
+	  Name			  "Simulink Coverage"
+	  CovEnable		  off
+	  CovScope		  "EntireSystem"
+	  CovIncludeTopModel	  on
+	  RecordCoverage	  off
+	  CovPath		  "/"
+	  CovSaveName		  "covdata"
+	  CovCompData		  ""
+	  CovMetricSettings	  "dw"
+	  CovFilter		  ""
+	  CovHTMLOptions	  ""
+	  CovNameIncrementing	  off
+	  CovHtmlReporting	  on
+	  CovForceBlockReductionOff on
+	  CovEnableCumulative	  on
+	  CovSaveCumulativeToWorkspaceVar on
+	  CovSaveSingleToWorkspaceVar on
+	  CovCumulativeVarName	  "covCumulativeData"
+	  CovCumulativeReport	  off
+	  CovSaveOutputData	  on
+	  CovOutputDir		  "slcov_output/$ModelName$"
+	  CovDataFileName	  "$ModelName$_cvdata"
+	  CovShowResultsExplorer  on
+	  CovReportOnPause	  on
+	  CovModelRefEnable	  "off"
+	  CovModelRefExcluded	  ""
+	  CovExternalEMLEnable	  off
+	  CovSFcnEnable		  off
+	  CovBoundaryAbsTol	  1e-05
+	  CovBoundaryRelTol	  0.01
+	  CovUseTimeInterval	  off
+	  CovStartTime		  0
+	  CovStopTime		  0
+	  CovMcdcMode		  "Masking"
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  21
+	  Version		  "1.17.1"
+	  DisabledProps		  []
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    " "
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	SSC.SimscapeCC {
+	  $ObjectID		  22
+	  Version		  "1.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "Name"
+	    PropName		    "DisabledProps"
+	  }
+	  Description		  ""
+	  Name			  "Simscape"
+	  EditingMode		  "Full"
+	  ExplicitSolverDiagnosticOptions "warning"
+	  GlobalZcOffDiagnosticOptions "warning"
+	  SimscapeNormalizeSystem on
+	  SimscapeNominalValues	  "[{\"value\":\"1\",\"unit\":\"A\"},{\"value\":\"1\",\"unit\":\"bar\"},{\"value\":\"1\",\"un"
+	  "it\":\"cm^2\"},{\"value\":\"1\",\"unit\":\"cm^3/s\"},{\"value\":\"1\",\"unit\":\"kJ/kg\"},{\"value\":\"1\",\"unit\""
+	  ":\"kW\"},{\"value\":\"1\",\"unit\":\"l\"},{\"value\":\"1\",\"unit\":\"N\"},{\"value\":\"1\",\"unit\":\"N*m\"},{\"va"
+	  "lue\":\"1\",\"unit\":\"V\"}]"
+	  SimscapeLogType	  "all"
+	  SimscapeLogSimulationStatistics off
+	  SimscapeLogOpenViewer	  off
+	  SimscapeLogName	  "simlog"
+	  SimscapeLogDecimation	  1
+	  SimscapeLogLimitData	  on
+	  SimscapeLogDataHistory  10000
+	  SimscapeUseOperatingPoints off
+	  SimscapeOperatingPoint  ""
+	  SelectedTab		  ""
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      ExtraOptions	      ""
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition    [ 378, 100, 1466, 794 ]
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    9
+  }
+  Object {
+    $PropName		    "DataTransfer"
+    $ObjectID		    23
+    $ClassName		    "Simulink.GlobalDataTransfer"
+    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
+    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
+    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
+    DefaultExtrapolationMethodBetweenContTasks "None"
+    AutoInsertRateTranBlk   [0]
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    HideAutomaticName	    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    MarkupType		    "model"
+    UseDisplayTextAsClickCallback off
+    AnnotationType	    "note_annotation"
+    FixedHeight		    off
+    FixedWidth		    off
+    Interpreter		    "off"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "opaque"
+    RunInitForIconRedraw    "analyze"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Scope
+      DefaultConfigurationName "Simulink.scopes.TimeScopeBlockCfg"
+      Floating		      off
+    }
+  }
+  System {
+    Name		    "ClassBAmpDesign"
+    Location		    [-6, -6, 1543, 831]
+    Open		    on
+    PortBlocksUseCompactNotation off
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "80"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "77"
+    Block {
+      BlockType		      Reference
+      Name		      "-5 V"
+      SID		      "77"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [440, 536, 480, 564]
+      ZOrder		      90
+      BlockRotation	      180
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      LibraryVersion	      "9000000.1"
+      SourceBlock	      "fl_lib/Electrical/Electrical Sources/DC Voltage Source"
+      SourceType	      "DC Voltage Source"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      LogSimulationData	      off
+      SourceFile	      "foundation.electrical.sources.dc_voltage"
+      ComponentPath	      "foundation.electrical.sources.dc_voltage"
+      ComponentVariants	      "foundation.electrical.sources.dc_voltage"
+      ComponentVariantNames   "dc_voltage"
+      ClassName		      "dc_voltage"
+      SchemaVersion	      "1"
+      v0		      "-5"
+      v0_unit		      "V"
+      v0_conf		      "compiletime"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "5 V\n"
+      SID		      "76"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [510, -129, 550, -101]
+      ZOrder		      89
+      BlockRotation	      180
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      LibraryVersion	      "9000000.1"
+      SourceBlock	      "fl_lib/Electrical/Electrical Sources/DC Voltage Source"
+      SourceType	      "DC Voltage Source"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      LogSimulationData	      off
+      SourceFile	      "foundation.electrical.sources.dc_voltage"
+      ComponentPath	      "foundation.electrical.sources.dc_voltage"
+      ComponentVariants	      "foundation.electrical.sources.dc_voltage"
+      ComponentVariantNames   "dc_voltage"
+      ClassName		      "dc_voltage"
+      SchemaVersion	      "1"
+      v0		      "5"
+      v0_unit		      "V"
+      v0_conf		      "compiletime"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "C1"
+      SID		      "16"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [225, 100, 265, 140]
+      ZOrder		      26
+      BlockRotation	      180
+      NamePlacement	      "alternate"
+      LibraryVersion	      "9000000.1"
+      SourceBlock	      "elec_lib/Passive Devices/Capacitor"
+      SourceType	      "Capacitor"
+      SourceProductName	      "Simscape Electronics"
+      SourceProductBaseCode   "SN"
+      LogSimulationData	      off
+      SourceFile	      "elec.passive.capacitor"
+      ComponentPath	      "elec.passive.capacitor"
+      ComponentVariants	      "elec.passive.capacitor"
+      ComponentVariantNames   "capacitor"
+      ClassName		      "capacitor"
+      SchemaVersion	      "1"
+      enable_table	      "0"
+      enable_table_unit	      "1"
+      enable_table_conf	      "compiletime"
+      c			      "1"
+      c_unit		      "uF"
+      c_conf		      "compiletime"
+      Cvec		      "[1e-05, 1e-06]"
+      Cvec_unit		      "F"
+      Cvec_conf		      "compiletime"
+      Vvec		      "[0, 10]"
+      Vvec_unit		      "V"
+      Vvec_conf		      "compiletime"
+      CV_table_symmetry	      "1"
+      CV_table_symmetry_unit  "1"
+      CV_table_symmetry_conf  "compiletime"
+      C_tol		      "5"
+      C_tol_unit	      "1"
+      C_tol_conf	      "compiletime"
+      enable_C_tol	      "0"
+      enable_C_tol_unit	      "1"
+      enable_C_tol_conf	      "compiletime"
+      tol_distribution	      "1"
+      tol_distribution_unit   "1"
+      tol_distribution_conf   "compiletime"
+      nSigma		      "4"
+      nSigma_unit	      "1"
+      nSigma_conf	      "compiletime"
+      r			      "1e-6"
+      r_unit		      "Ohm"
+      r_conf		      "compiletime"
+      g			      "0"
+      g_unit		      "1/Ohm"
+      g_conf		      "compiletime"
+      enable_operating_limits "0"
+      enable_operating_limits_unit "1"
+      enable_operating_limits_conf "compiletime"
+      operating_limit_action  "2"
+      operating_limit_action_unit "1"
+      operating_limit_action_conf "compiletime"
+      max_working_voltage_range	"[-25, 25]"
+      max_working_voltage_range_unit "V"
+      max_working_voltage_range_conf "compiletime"
+      power_rating	      "1"
+      power_rating_unit	      "W"
+      power_rating_conf	      "compiletime"
+      enable_faults	      "0"
+      enable_faults_unit      "1"
+      enable_faults_conf      "compiletime"
+      fault_action	      "1"
+      fault_action_unit	      "1"
+      fault_action_conf	      "compiletime"
+      Cscale_faulted	      "100"
+      Cscale_faulted_unit     "1"
+      Cscale_faulted_conf     "compiletime"
+      R_faulted		      "1e-3"
+      R_faulted_unit	      "Ohm"
+      R_faulted_conf	      "compiletime"
+      G_faulted		      "0"
+      G_faulted_unit	      "1/Ohm"
+      G_faulted_conf	      "compiletime"
+      tau_fault		      "1e-3"
+      tau_fault_unit	      "s"
+      tau_fault_conf	      "compiletime"
+      enable_temporal_fault   "0"
+      enable_temporal_fault_unit "1"
+      enable_temporal_fault_conf "compiletime"
+      t_fault		      "1"
+      t_fault_unit	      "s"
+      t_fault_conf	      "compiletime"
+      enable_behavioral_fault "0"
+      enable_behavioral_fault_unit "1"
+      enable_behavioral_fault_conf "compiletime"
+      max_permissible_voltage_range "[-100, 100]"
+      max_permissible_voltage_range_unit "V"
+      max_permissible_voltage_range_conf "compiletime"
+      t_fail_on_voltage	      "1"
+      t_fail_on_voltage_unit  "s"
+      t_fail_on_voltage_conf  "compiletime"
+      i_specify		      off
+      i_priority	      "None"
+      i			      "0"
+      i_unit		      "A"
+      i_nominal_specify	      off
+      i_nominal_unit	      "A"
+      i_nominal_value	      "1"
+      v_specify		      off
+      v_priority	      "None"
+      v			      "0"
+      v_unit		      "V"
+      v_nominal_specify	      off
+      v_nominal_unit	      "V"
+      v_nominal_value	      "1"
+      vc_specify	      off
+      vc_priority	      "High"
+      vc		      "0"
+      vc_unit		      "V"
+      vc_nominal_specify      off
+      vc_nominal_unit	      "V"
+      vc_nominal_value	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Current Sensor"
+      SID		      "59"
+      Ports		      [0, 0, 0, 0, 0, 1, 2]
+      Position		      [120, 55, 160, 95]
+      ZOrder		      72
+      LibraryVersion	      "9000000.1"
+      SourceBlock	      "fl_lib/Electrical/Electrical Sensors/Current Sensor"
+      SourceType	      "Current Sensor"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      LogSimulationData	      off
+      SourceFile	      "foundation.electrical.sensors.current"
+      ComponentPath	      "foundation.electrical.sensors.current"
+      ComponentVariants	      "foundation.electrical.sensors.current"
+      ComponentVariantNames   "current"
+      ClassName		      "current"
+      SchemaVersion	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Electrical \nReference1"
+      SID		      "44"
+      Ports		      [0, 0, 0, 0, 0, 1]
+      Position		      [885, 465, 905, 485]
+      ZOrder		      57
+      BlockRotation	      270
+      BlockMirror	      on
+      LibraryVersion	      "9000000.1"
+      SourceBlock	      "fl_lib/Electrical/Electrical Elements/Electrical Reference"
+      SourceType	      "Electrical Reference"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      LogSimulationData	      off
+      SourceFile	      "foundation.electrical.elements.reference"
+      ComponentPath	      "foundation.electrical.elements.reference"
+      ComponentVariants	      "foundation.electrical.elements.reference"
+      ComponentVariantNames   "reference"
+      ClassName		      "reference"
+      SchemaVersion	      "1"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Input Current Sensor"
+      SID		      "40"
+      Ports		      [1]
+      Position		      [830, -81, 860, -49]
+      ZOrder		      43
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingLimitDataPoints',true,'DataLoggingSaveFormat','Array','DataLoggingDecim"
+      "ation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDisplays"
+      "',{struct('MinYLimReal','-0.02808','MaxYLimReal','0.02807','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','"
+      "0.02808','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickCo"
+      "lor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.074509803921"
+      "5686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.074509803921"
+      "5686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title"
+      "','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'PS-Simu"
+      "link Converter'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.02808','"
+      "MaxYLimReal','0.02807','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.02808','LegendVisibility','off','X"
+      "Grid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.6862745098"
+      "03922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.4117647"
+      "05882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.27450980392"
+      "1569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCa"
+      "che',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extm"
+      "gr.Configuration('Tools','Plot Navigation',true),extmgr.Configuration('Tools','Measurements',true,'Version','201"
+      "7b')),'Version','2017b','Location',[1 67.8 1537 823],'VisibleAtModelOpen','on')"
+      NumInputPorts	      "1"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Input Voltage Scope\n"
+      SID		      "62"
+      Ports		      [1]
+      Position		      [875, 319, 905, 351]
+      ZOrder		      75
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingLimitDataPoints',true,'DataLoggingSaveFormat','Array','DataLoggingDecim"
+      "ation','1','DataLoggingDecimateData',true,'DataLoggingVariableName','ScopeData3'),extmgr.Configuration('Visuals'"
+      ",'Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','-3.74954','MaxYLimReal','3.74868','YLabelReal','"
+      "','MinYLimMag','0.00000','MaxYLimMag','3.74954','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase"
+      "',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder'"
+      ",[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862"
+      "745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.074"
+      "5098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{"
+      "{}},'NumLines',1,'LineNames',{{'PS-Simulink Converter4'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDef"
+      "aults',struct('MinYLimReal','-3.74954','MaxYLimReal','3.74868','YLabelReal','','MinYLimMag','0.00000','MaxYLimMa"
+      "g','3.74954','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTi"
+      "ckColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.07450980"
+      "39215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.07450980"
+      "39215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'T"
+      "itle','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}}"
+      ",'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true),extmgr.Configuration('T"
+      "ools','Measurements',true,'Version','2017b')),'Version','2017b','Location',[1 67.8 1537 823])"
+      NumInputPorts	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "NPN Bipolar\nTransistor\n"
+      SID		      "56"
+      Ports		      [0, 0, 0, 0, 0, 1, 2]
+      Position		      [360, -10, 390, 50]
+      ZOrder		      69
+      LibraryVersion	      "9000000.1"
+      SourceBlock	      "elec_lib/Semiconductor\nDevices/NPN Bipolar\nTransistor"
+      SourceType	      "NPN Bipolar\nTransistor"
+      SourceProductName	      "Simscape Electronics"
+      SourceProductBaseCode   "SN"
+      LogSimulationData	      off
+      SourceFile	      "elec.semiconductors.bjt_npn"
+      ComponentPath	      "elec.semiconductors.bjt_npn"
+      ComponentVariants	      "elec.semiconductors.bjt_npn, elec.semiconductors.bjt_npn_thermal"
+      ComponentVariantNames   "No thermal port, Show thermal port"
+      ClassName		      "Simscape variant"
+      SchemaVersion	      "1"
+      parameterization	      "1"
+      parameterization_unit   "1"
+      parameterization_conf   "compiletime"
+      prmDatasheet	      "1"
+      prmDatasheet_unit	      "1"
+      prmDatasheet_conf	      "compiletime"
+      prmEquCoeff	      "1"
+      prmEquCoeff_unit	      "1"
+      prmEquCoeff_conf	      "compiletime"
+      BF		      "100"
+      BF_unit		      "1"
+      BF_conf		      "compiletime"
+      IS		      "1e-14"
+      IS_unit		      "A"
+      IS_conf		      "compiletime"
+      ec		      "1"
+      ec_unit		      "1"
+      ec_conf		      "compiletime"
+      VAF		      "200"
+      VAF_unit		      "V"
+      VAF_conf		      "compiletime"
+      hfe		      "100"
+      hfe_unit		      "1"
+      hfe_conf		      "compiletime"
+      hoe		      "5e-5"
+      hoe_unit		      "1/Ohm"
+      hoe_conf		      "compiletime"
+      Ic_h		      "1"
+      Ic_h_unit		      "mA"
+      Ic_h_conf		      "compiletime"
+      Vce_h		      "5"
+      Vce_h_unit	      "V"
+      Vce_h_conf	      "compiletime"
+      V1		      "0.55"
+      V1_unit		      "V"
+      V1_conf		      "compiletime"
+      I1		      "0.5"
+      I1_unit		      "mA"
+      I1_conf		      "compiletime"
+      BR		      "1"
+      BR_unit		      "1"
+      BR_conf		      "compiletime"
+      Tmeas		      "25"
+      Tmeas_unit	      "degC"
+      Tmeas_conf	      "compiletime"
+      RC		      "0.01"
+      RC_unit		      "Ohm"
+      RC_conf		      "compiletime"
+      RE		      "1e-4"
+      RE_unit		      "Ohm"
+      RE_conf		      "compiletime"
+      RB		      "1"
+      RB_unit		      "Ohm"
+      RB_conf		      "compiletime"
+      C_BC		      "5"
+      C_BC_unit		      "pF"
+      C_BC_conf		      "compiletime"
+      C_BE		      "5"
+      C_BE_unit		      "pF"
+      C_BE_conf		      "compiletime"
+      TF		      "0"
+      TF_unit		      "us"
+      TF_conf		      "compiletime"
+      TR		      "0"
+      TR_unit		      "us"
+      TR_conf		      "compiletime"
+      hfe_T2		      "125"
+      hfe_T2_unit	      "1"
+      hfe_T2_conf	      "compiletime"
+      XTB		      "0"
+      XTB_unit		      "1"
+      XTB_conf		      "compiletime"
+      V1_T2		      "0.45"
+      V1_T2_unit	      "V"
+      V1_T2_conf	      "compiletime"
+      I1_T2		      "0.5"
+      I1_T2_unit	      "mA"
+      I1_T2_conf	      "compiletime"
+      Tmeas2		      "125"
+      Tmeas2_unit	      "degC"
+      Tmeas2_conf	      "compiletime"
+      EG		      "1.11"
+      EG_unit		      "eV"
+      EG_conf		      "compiletime"
+      XTI		      "3"
+      XTI_unit		      "1"
+      XTI_conf		      "compiletime"
+      TdeviceDatasheet	      "25"
+      TdeviceDatasheet_unit   "degC"
+      TdeviceDatasheet_conf   "compiletime"
+      TdeviceEquCoeff	      "25"
+      TdeviceEquCoeff_unit    "degC"
+      TdeviceEquCoeff_conf    "compiletime"
+      Rth		      "[ 0 10 ]"
+      Rth_unit		      "K/W"
+      Rth_conf		      "compiletime"
+      thermal_mass_parameterization "1"
+      thermal_mass_parameterization_unit "1"
+      thermal_mass_parameterization_conf "compiletime"
+      thermal_mass	      "[ 0 1 ]"
+      thermal_mass_unit	      "J/K"
+      thermal_mass_conf	      "compiletime"
+      thermal_time_constant   "[ 0 10 ]"
+      thermal_time_constant_unit "s"
+      thermal_time_constant_conf "compiletime"
+      thermal_mass_initial_temperatures	"[ 25 25 ]"
+      thermal_mass_initial_temperatures_unit "degC"
+      thermal_mass_initial_temperatures_conf "compiletime"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Output Current Scope"
+      SID		      "65"
+      Ports		      [1]
+      Position		      [1105, -1, 1135, 31]
+      ZOrder		      79
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingLimitDataPoints',true,'DataLoggingSaveFormat','Array','DataLoggingDecim"
+      "ation','1','DataLoggingDecimateData',true,'DataLoggingVariableName','ScopeData4'),extmgr.Configuration('Visuals'"
+      ",'Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','-0.73746','MaxYLimReal','0.73729','YLabelReal','"
+      "','MinYLimMag','0.00000','MaxYLimMag','0.73746','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase"
+      "',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder'"
+      ",[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862"
+      "745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.074"
+      "5098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{"
+      "{}},'NumLines',1,'LineNames',{{'PS-Simulink Converter5'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDef"
+      "aults',struct('MinYLimReal','-0.73746','MaxYLimReal','0.73729','YLabelReal','','MinYLimMag','0.00000','MaxYLimMa"
+      "g','0.73746','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTi"
+      "ckColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.07450980"
+      "39215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.07450980"
+      "39215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'T"
+      "itle','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}}"
+      ",'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true),extmgr.Configuration('T"
+      "ools','Measurements',true,'Version','2017b')),'Version','2017b','Location',[1 67.8 1537 823],'VisibleAtModelOpen"
+      "','on')"
+      NumInputPorts	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Output Current Sensor1"
+      SID		      "63"
+      Ports		      [0, 0, 0, 0, 0, 1, 2]
+      Position		      [480, 100, 520, 140]
+      ZOrder		      76
+      LibraryVersion	      "9000000.1"
+      SourceBlock	      "fl_lib/Electrical/Electrical Sensors/Current Sensor"
+      SourceType	      "Current Sensor"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      LogSimulationData	      off
+      SourceFile	      "foundation.electrical.sensors.current"
+      ComponentPath	      "foundation.electrical.sensors.current"
+      ComponentVariants	      "foundation.electrical.sensors.current"
+      ComponentVariantNames   "current"
+      ClassName		      "current"
+      SchemaVersion	      "1"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Output Voltage Scope1"
+      SID		      "74"
+      Ports		      [1]
+      Position		      [1125, 94, 1155, 126]
+      ZOrder		      88
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingLimitDataPoints',true,'DataLoggingSaveFormat','Array','DataLoggingDecim"
+      "ation','1','DataLoggingDecimateData',true,'DataLoggingVariableName','ScopeData5'),extmgr.Configuration('Visuals'"
+      ",'Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','-2.94984','MaxYLimReal','2.94916','YLabelReal','"
+      "','MinYLimMag','0.00000','MaxYLimMag','2.94984','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase"
+      "',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder'"
+      ",[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862"
+      "745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.074"
+      "5098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{"
+      "{}},'NumLines',1,'LineNames',{{'PS-Simulink Converter6'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDef"
+      "aults',struct('MinYLimReal','-2.94984','MaxYLimReal','2.94916','YLabelReal','','MinYLimMag','0.00000','MaxYLimMa"
+      "g','2.94984','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTi"
+      "ckColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.07450980"
+      "39215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.07450980"
+      "39215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'T"
+      "itle','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}}"
+      ",'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'PreviousAutoscale','XY'"
+      "),extmgr.Configuration('Tools','Measurements',true,'Version','2017b')),'Version','2017b','Location',[1 67.8 1537"
+      " 823],'VisibleAtModelOpen','on')"
+      NumInputPorts	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Output Voltage Sensor1"
+      SID		      "64"
+      Ports		      [0, 0, 0, 0, 0, 1, 2]
+      Position		      [730, 45, 770, 85]
+      ZOrder		      77
+      BlockRotation	      270
+      BlockMirror	      on
+      LibraryVersion	      "9000000.1"
+      SourceBlock	      "fl_lib/Electrical/Electrical Sensors/Voltage Sensor"
+      SourceType	      "Voltage Sensor"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      LogSimulationData	      off
+      SourceFile	      "foundation.electrical.sensors.voltage"
+      ComponentPath	      "foundation.electrical.sensors.voltage"
+      ComponentVariants	      "foundation.electrical.sensors.voltage"
+      ComponentVariantNames   "voltage"
+      ClassName		      "voltage"
+      SchemaVersion	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "PNP \nBipolar\nTransistor"
+      SID		      "57"
+      Ports		      [0, 0, 0, 0, 0, 1, 2]
+      Position		      [365, 190, 395, 250]
+      ZOrder		      68
+      LibraryVersion	      "9000000.1"
+      SourceBlock	      "elec_lib/Semiconductor\nDevices/PNP Bipolar\nTransistor"
+      SourceType	      "PNP Bipolar\nTransistor"
+      SourceProductName	      "Simscape Electronics"
+      SourceProductBaseCode   "SN"
+      LogSimulationData	      off
+      SourceFile	      "elec.semiconductors.bjt_pnp"
+      ComponentPath	      "elec.semiconductors.bjt_pnp"
+      ComponentVariants	      "elec.semiconductors.bjt_pnp, elec.semiconductors.bjt_pnp_thermal"
+      ComponentVariantNames   "No thermal port, Show thermal port"
+      ClassName		      "Simscape variant"
+      SchemaVersion	      "1"
+      parameterization	      "1"
+      parameterization_unit   "1"
+      parameterization_conf   "compiletime"
+      prmDatasheet	      "1"
+      prmDatasheet_unit	      "1"
+      prmDatasheet_conf	      "compiletime"
+      prmEquCoeff	      "1"
+      prmEquCoeff_unit	      "1"
+      prmEquCoeff_conf	      "compiletime"
+      BF		      "100"
+      BF_unit		      "1"
+      BF_conf		      "compiletime"
+      IS		      "1e-14"
+      IS_unit		      "A"
+      IS_conf		      "compiletime"
+      ec		      "1"
+      ec_unit		      "1"
+      ec_conf		      "compiletime"
+      VAF		      "200"
+      VAF_unit		      "V"
+      VAF_conf		      "compiletime"
+      hfe		      "100"
+      hfe_unit		      "1"
+      hfe_conf		      "compiletime"
+      hoe		      "5e-5"
+      hoe_unit		      "1/Ohm"
+      hoe_conf		      "compiletime"
+      Ic_h		      "-1"
+      Ic_h_unit		      "mA"
+      Ic_h_conf		      "compiletime"
+      Vce_h		      "-5"
+      Vce_h_unit	      "V"
+      Vce_h_conf	      "compiletime"
+      V1		      "-0.55"
+      V1_unit		      "V"
+      V1_conf		      "compiletime"
+      I1		      "-0.5"
+      I1_unit		      "mA"
+      I1_conf		      "compiletime"
+      BR		      "1"
+      BR_unit		      "1"
+      BR_conf		      "compiletime"
+      Tmeas		      "25"
+      Tmeas_unit	      "degC"
+      Tmeas_conf	      "compiletime"
+      RC		      "0.01"
+      RC_unit		      "Ohm"
+      RC_conf		      "compiletime"
+      RE		      "1e-4"
+      RE_unit		      "Ohm"
+      RE_conf		      "compiletime"
+      RB		      "1"
+      RB_unit		      "Ohm"
+      RB_conf		      "compiletime"
+      C_BC		      "5"
+      C_BC_unit		      "pF"
+      C_BC_conf		      "compiletime"
+      C_BE		      "5"
+      C_BE_unit		      "pF"
+      C_BE_conf		      "compiletime"
+      TF		      "0"
+      TF_unit		      "us"
+      TF_conf		      "compiletime"
+      TR		      "0"
+      TR_unit		      "us"
+      TR_conf		      "compiletime"
+      hfe_T2		      "125"
+      hfe_T2_unit	      "1"
+      hfe_T2_conf	      "compiletime"
+      XTB		      "0"
+      XTB_unit		      "1"
+      XTB_conf		      "compiletime"
+      V1_T2		      "-0.45"
+      V1_T2_unit	      "V"
+      V1_T2_conf	      "compiletime"
+      I1_T2		      "-0.5"
+      I1_T2_unit	      "mA"
+      I1_T2_conf	      "compiletime"
+      Tmeas2		      "125"
+      Tmeas2_unit	      "degC"
+      Tmeas2_conf	      "compiletime"
+      EG		      "1.11"
+      EG_unit		      "eV"
+      EG_conf		      "compiletime"
+      XTI		      "3"
+      XTI_unit		      "1"
+      XTI_conf		      "compiletime"
+      TdeviceDatasheet	      "25"
+      TdeviceDatasheet_unit   "degC"
+      TdeviceDatasheet_conf   "compiletime"
+      TdeviceEquCoeff	      "25"
+      TdeviceEquCoeff_unit    "degC"
+      TdeviceEquCoeff_conf    "compiletime"
+      Rth		      "[ 0 10 ]"
+      Rth_unit		      "K/W"
+      Rth_conf		      "compiletime"
+      thermal_mass_parameterization "1"
+      thermal_mass_parameterization_unit "1"
+      thermal_mass_parameterization_conf "compiletime"
+      thermal_mass	      "[ 0 1 ]"
+      thermal_mass_unit	      "J/K"
+      thermal_mass_conf	      "compiletime"
+      thermal_time_constant   "[ 0 10 ]"
+      thermal_time_constant_unit "s"
+      thermal_time_constant_conf "compiletime"
+      thermal_mass_initial_temperatures	"[ 25 25 ]"
+      thermal_mass_initial_temperatures_unit "degC"
+      thermal_mass_initial_temperatures_conf "compiletime"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "PS-Simulink\nConverter"
+      SID		      "33"
+      Ports		      [0, 1, 0, 0, 0, 1]
+      Position		      [690, -85, 720, -55]
+      ZOrder		      42
+      LibraryVersion	      "2.0"
+      SourceBlock	      "nesl_utility/PS-Simulink\nConverter"
+      SourceType	      "PS-Simulink\nConverter"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      ContentPreviewEnabled   off
+      PhysicalDomain	      "network_engine_domain"
+      SubClassName	      "ps_output"
+      LeftPortType	      "input"
+      RightPortType	      "output"
+      PseudoPeriodic	      off
+      Frequencies	      "[]"
+      Unit		      "1"
+      AffineConversion	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "PS-Simulink\nConverter4"
+      SID		      "61"
+      Ports		      [0, 1, 0, 0, 0, 1]
+      Position		      [670, 320, 700, 350]
+      ZOrder		      74
+      LibraryVersion	      "2.0"
+      SourceBlock	      "nesl_utility/PS-Simulink\nConverter"
+      SourceType	      "PS-Simulink\nConverter"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      ContentPreviewEnabled   off
+      PhysicalDomain	      "network_engine_domain"
+      SubClassName	      "ps_output"
+      LeftPortType	      "input"
+      RightPortType	      "output"
+      PseudoPeriodic	      off
+      Frequencies	      "[]"
+      Unit		      "1"
+      AffineConversion	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "PS-Simulink\nConverter5"
+      SID		      "66"
+      Ports		      [0, 1, 0, 0, 0, 1]
+      Position		      [965, -5, 995, 25]
+      ZOrder		      78
+      LibraryVersion	      "2.0"
+      SourceBlock	      "nesl_utility/PS-Simulink\nConverter"
+      SourceType	      "PS-Simulink\nConverter"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      ContentPreviewEnabled   off
+      PhysicalDomain	      "network_engine_domain"
+      SubClassName	      "ps_output"
+      LeftPortType	      "input"
+      RightPortType	      "output"
+      PseudoPeriodic	      off
+      Frequencies	      "[]"
+      Unit		      "1"
+      AffineConversion	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "PS-Simulink\nConverter6"
+      SID		      "75"
+      Ports		      [0, 1, 0, 0, 0, 1]
+      Position		      [985, 95, 1015, 125]
+      ZOrder		      87
+      LibraryVersion	      "2.0"
+      SourceBlock	      "nesl_utility/PS-Simulink\nConverter"
+      SourceType	      "PS-Simulink\nConverter"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      ContentPreviewEnabled   off
+      PhysicalDomain	      "network_engine_domain"
+      SubClassName	      "ps_output"
+      LeftPortType	      "input"
+      RightPortType	      "output"
+      PseudoPeriodic	      off
+      Frequencies	      "[]"
+      Unit		      "1"
+      AffineConversion	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "R Load\n"
+      SID		      "58"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [836, 145, 864, 185]
+      ZOrder		      71
+      BlockRotation	      90
+      NamePlacement	      "alternate"
+      LibraryVersion	      "9000000.1"
+      SourceBlock	      "elec_lib/Passive Devices/Resistor"
+      SourceType	      "Resistor"
+      SourceProductName	      "Simscape Electronics"
+      SourceProductBaseCode   "SN"
+      LogSimulationData	      off
+      SourceFile	      "elec.passive.resistor"
+      ComponentPath	      "elec.passive.resistor"
+      ComponentVariants	      "elec.passive.resistor, elec.passive.resistor_thermal"
+      ComponentVariantNames   "No thermal port, Show thermal port"
+      ClassName		      "Simscape variant"
+      SchemaVersion	      "1"
+      R			      "4"
+      R_unit		      "Ohm"
+      R_conf		      "compiletime"
+      R_tol		      "5"
+      R_tol_unit	      "1"
+      R_tol_conf	      "compiletime"
+      enable_R_tol	      "0"
+      enable_R_tol_unit	      "1"
+      enable_R_tol_conf	      "compiletime"
+      tol_distribution	      "1"
+      tol_distribution_unit   "1"
+      tol_distribution_conf   "compiletime"
+      nSigma		      "4"
+      nSigma_unit	      "1"
+      nSigma_conf	      "compiletime"
+      enable_operating_limits "0"
+      enable_operating_limits_unit "1"
+      enable_operating_limits_conf "compiletime"
+      operating_limit_action  "2"
+      operating_limit_action_unit "1"
+      operating_limit_action_conf "compiletime"
+      max_working_voltage     "100"
+      max_working_voltage_unit "V"
+      max_working_voltage_conf "compiletime"
+      power_rating	      "1"
+      power_rating_unit	      "W"
+      power_rating_conf	      "compiletime"
+      enable_faults	      "0"
+      enable_faults_unit      "1"
+      enable_faults_conf      "compiletime"
+      fault_action	      "1"
+      fault_action_unit	      "1"
+      fault_action_conf	      "compiletime"
+      R_faulted		      "inf"
+      R_faulted_unit	      "Ohm"
+      R_faulted_conf	      "compiletime"
+      enable_temporal_fault   "0"
+      enable_temporal_fault_unit "1"
+      enable_temporal_fault_conf "compiletime"
+      t_fault		      "1"
+      t_fault_unit	      "s"
+      t_fault_conf	      "compiletime"
+      enable_behavioral_fault "0"
+      enable_behavioral_fault_unit "1"
+      enable_behavioral_fault_conf "compiletime"
+      max_permissible_current "1"
+      max_permissible_current_unit "A"
+      max_permissible_current_conf "compiletime"
+      t_fail_on_current	      "1"
+      t_fail_on_current_unit  "s"
+      t_fail_on_current_conf  "compiletime"
+      noise_mode	      "0"
+      noise_mode_unit	      "1"
+      noise_mode_conf	      "compiletime"
+      sample_time	      "1e-3"
+      sample_time_unit	      "s"
+      sample_time_conf	      "compiletime"
+      repeatability	      "1"
+      repeatability_unit      "1"
+      repeatability_conf      "compiletime"
+      auto_seed		      "522519083"
+      auto_seed_unit	      "1"
+      auto_seed_conf	      "compiletime"
+      user_seed		      "0"
+      user_seed_unit	      "1"
+      user_seed_conf	      "compiletime"
+      Tdevice		      "25"
+      Tdevice_unit	      "degC"
+      Tdevice_conf	      "compiletime"
+      alpha		      "3.93e-3"
+      alpha_unit	      "1/K"
+      alpha_conf	      "compiletime"
+      Tmeas		      "25"
+      Tmeas_unit	      "degC"
+      Tmeas_conf	      "compiletime"
+      thermal_mass	      "100"
+      thermal_mass_unit	      "J/K"
+      thermal_mass_conf	      "compiletime"
+      power_derating_T1	      "70"
+      power_derating_T1_unit  "degC"
+      power_derating_T1_conf  "compiletime"
+      power_derating_T2	      "155"
+      power_derating_T2_unit  "degC"
+      power_derating_T2_conf  "compiletime"
+      operating_temperature_range_vec "[-50, 150]"
+      operating_temperature_range_vec_unit "degC"
+      operating_temperature_range_vec_conf "compiletime"
+      temperature_specify     off
+      temperature_priority    "High"
+      temperature	      "298.15"
+      temperature_unit	      "K"
+      temperature_nominal_specify off
+      temperature_nominal_unit "K"
+      temperature_nominal_value	"1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "R1"
+      SID		      "36"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [271, 235, 299, 275]
+      ZOrder		      46
+      BlockRotation	      90
+      NamePlacement	      "alternate"
+      LibraryVersion	      "9000000.1"
+      SourceBlock	      "elec_lib/Passive Devices/Resistor"
+      SourceType	      "Resistor"
+      SourceProductName	      "Simscape Electronics"
+      SourceProductBaseCode   "SN"
+      LogSimulationData	      off
+      SourceFile	      "elec.passive.resistor"
+      ComponentPath	      "elec.passive.resistor"
+      ComponentVariants	      "elec.passive.resistor, elec.passive.resistor_thermal"
+      ComponentVariantNames   "No thermal port, Show thermal port"
+      ClassName		      "Simscape variant"
+      SchemaVersion	      "1"
+      R			      "323"
+      R_unit		      "Ohm"
+      R_conf		      "compiletime"
+      R_tol		      "5"
+      R_tol_unit	      "1"
+      R_tol_conf	      "compiletime"
+      enable_R_tol	      "0"
+      enable_R_tol_unit	      "1"
+      enable_R_tol_conf	      "compiletime"
+      tol_distribution	      "1"
+      tol_distribution_unit   "1"
+      tol_distribution_conf   "compiletime"
+      nSigma		      "4"
+      nSigma_unit	      "1"
+      nSigma_conf	      "compiletime"
+      enable_operating_limits "0"
+      enable_operating_limits_unit "1"
+      enable_operating_limits_conf "compiletime"
+      operating_limit_action  "2"
+      operating_limit_action_unit "1"
+      operating_limit_action_conf "compiletime"
+      max_working_voltage     "100"
+      max_working_voltage_unit "V"
+      max_working_voltage_conf "compiletime"
+      power_rating	      "1"
+      power_rating_unit	      "W"
+      power_rating_conf	      "compiletime"
+      enable_faults	      "0"
+      enable_faults_unit      "1"
+      enable_faults_conf      "compiletime"
+      fault_action	      "1"
+      fault_action_unit	      "1"
+      fault_action_conf	      "compiletime"
+      R_faulted		      "inf"
+      R_faulted_unit	      "Ohm"
+      R_faulted_conf	      "compiletime"
+      enable_temporal_fault   "0"
+      enable_temporal_fault_unit "1"
+      enable_temporal_fault_conf "compiletime"
+      t_fault		      "1"
+      t_fault_unit	      "s"
+      t_fault_conf	      "compiletime"
+      enable_behavioral_fault "0"
+      enable_behavioral_fault_unit "1"
+      enable_behavioral_fault_conf "compiletime"
+      max_permissible_current "1"
+      max_permissible_current_unit "A"
+      max_permissible_current_conf "compiletime"
+      t_fail_on_current	      "1"
+      t_fail_on_current_unit  "s"
+      t_fail_on_current_conf  "compiletime"
+      noise_mode	      "0"
+      noise_mode_unit	      "1"
+      noise_mode_conf	      "compiletime"
+      sample_time	      "1e-3"
+      sample_time_unit	      "s"
+      sample_time_conf	      "compiletime"
+      repeatability	      "1"
+      repeatability_unit      "1"
+      repeatability_conf      "compiletime"
+      auto_seed		      "2114606122"
+      auto_seed_unit	      "1"
+      auto_seed_conf	      "compiletime"
+      user_seed		      "0"
+      user_seed_unit	      "1"
+      user_seed_conf	      "compiletime"
+      Tdevice		      "25"
+      Tdevice_unit	      "degC"
+      Tdevice_conf	      "compiletime"
+      alpha		      "3.93e-3"
+      alpha_unit	      "1/K"
+      alpha_conf	      "compiletime"
+      Tmeas		      "25"
+      Tmeas_unit	      "degC"
+      Tmeas_conf	      "compiletime"
+      thermal_mass	      "100"
+      thermal_mass_unit	      "J/K"
+      thermal_mass_conf	      "compiletime"
+      power_derating_T1	      "70"
+      power_derating_T1_unit  "degC"
+      power_derating_T1_conf  "compiletime"
+      power_derating_T2	      "155"
+      power_derating_T2_unit  "degC"
+      power_derating_T2_conf  "compiletime"
+      operating_temperature_range_vec "[-50, 150]"
+      operating_temperature_range_vec_unit "degC"
+      operating_temperature_range_vec_conf "compiletime"
+      temperature_specify     off
+      temperature_priority    "High"
+      temperature	      "298.15"
+      temperature_unit	      "K"
+      temperature_nominal_specify off
+      temperature_nominal_unit "K"
+      temperature_nominal_value	"1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "R2\n"
+      SID		      "37"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [258, 160, 312, 210]
+      ZOrder		      47
+      BlockRotation	      90
+      NamePlacement	      "alternate"
+      LibraryVersion	      "9000000.1"
+      SourceBlock	      "elec_lib/Passive Devices/Resistor"
+      SourceType	      "Resistor"
+      SourceProductName	      "Simscape Electronics"
+      SourceProductBaseCode   "SN"
+      LogSimulationData	      off
+      SourceFile	      "elec.passive.resistor"
+      ComponentPath	      "elec.passive.resistor"
+      ComponentVariants	      "elec.passive.resistor, elec.passive.resistor_thermal"
+      ComponentVariantNames   "No thermal port, Show thermal port"
+      ClassName		      "Simscape variant"
+      SchemaVersion	      "1"
+      R			      "40"
+      R_unit		      "Ohm"
+      R_conf		      "compiletime"
+      R_tol		      "5"
+      R_tol_unit	      "1"
+      R_tol_conf	      "compiletime"
+      enable_R_tol	      "0"
+      enable_R_tol_unit	      "1"
+      enable_R_tol_conf	      "compiletime"
+      tol_distribution	      "1"
+      tol_distribution_unit   "1"
+      tol_distribution_conf   "compiletime"
+      nSigma		      "4"
+      nSigma_unit	      "1"
+      nSigma_conf	      "compiletime"
+      enable_operating_limits "0"
+      enable_operating_limits_unit "1"
+      enable_operating_limits_conf "compiletime"
+      operating_limit_action  "2"
+      operating_limit_action_unit "1"
+      operating_limit_action_conf "compiletime"
+      max_working_voltage     "100"
+      max_working_voltage_unit "V"
+      max_working_voltage_conf "compiletime"
+      power_rating	      "1"
+      power_rating_unit	      "W"
+      power_rating_conf	      "compiletime"
+      enable_faults	      "0"
+      enable_faults_unit      "1"
+      enable_faults_conf      "compiletime"
+      fault_action	      "1"
+      fault_action_unit	      "1"
+      fault_action_conf	      "compiletime"
+      R_faulted		      "inf"
+      R_faulted_unit	      "Ohm"
+      R_faulted_conf	      "compiletime"
+      enable_temporal_fault   "0"
+      enable_temporal_fault_unit "1"
+      enable_temporal_fault_conf "compiletime"
+      t_fault		      "1"
+      t_fault_unit	      "s"
+      t_fault_conf	      "compiletime"
+      enable_behavioral_fault "0"
+      enable_behavioral_fault_unit "1"
+      enable_behavioral_fault_conf "compiletime"
+      max_permissible_current "1"
+      max_permissible_current_unit "A"
+      max_permissible_current_conf "compiletime"
+      t_fail_on_current	      "1"
+      t_fail_on_current_unit  "s"
+      t_fail_on_current_conf  "compiletime"
+      noise_mode	      "0"
+      noise_mode_unit	      "1"
+      noise_mode_conf	      "compiletime"
+      sample_time	      "1e-3"
+      sample_time_unit	      "s"
+      sample_time_conf	      "compiletime"
+      repeatability	      "1"
+      repeatability_unit      "1"
+      repeatability_conf      "compiletime"
+      auto_seed		      "2983899465"
+      auto_seed_unit	      "1"
+      auto_seed_conf	      "compiletime"
+      user_seed		      "0"
+      user_seed_unit	      "1"
+      user_seed_conf	      "compiletime"
+      Tdevice		      "25"
+      Tdevice_unit	      "degC"
+      Tdevice_conf	      "compiletime"
+      alpha		      "3.93e-3"
+      alpha_unit	      "1/K"
+      alpha_conf	      "compiletime"
+      Tmeas		      "25"
+      Tmeas_unit	      "degC"
+      Tmeas_conf	      "compiletime"
+      thermal_mass	      "100"
+      thermal_mass_unit	      "J/K"
+      thermal_mass_conf	      "compiletime"
+      power_derating_T1	      "70"
+      power_derating_T1_unit  "degC"
+      power_derating_T1_conf  "compiletime"
+      power_derating_T2	      "155"
+      power_derating_T2_unit  "degC"
+      power_derating_T2_conf  "compiletime"
+      operating_temperature_range_vec "[-50, 150]"
+      operating_temperature_range_vec_unit "degC"
+      operating_temperature_range_vec_conf "compiletime"
+      temperature_specify     off
+      temperature_priority    "High"
+      temperature	      "298.15"
+      temperature_unit	      "K"
+      temperature_nominal_specify off
+      temperature_nominal_unit "K"
+      temperature_nominal_value	"1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "R3"
+      SID		      "38"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [251, 35, 279, 75]
+      ZOrder		      49
+      BlockRotation	      90
+      NamePlacement	      "alternate"
+      LibraryVersion	      "9000000.1"
+      SourceBlock	      "elec_lib/Passive Devices/Resistor"
+      SourceType	      "Resistor"
+      SourceProductName	      "Simscape Electronics"
+      SourceProductBaseCode   "SN"
+      LogSimulationData	      off
+      SourceFile	      "elec.passive.resistor"
+      ComponentPath	      "elec.passive.resistor"
+      ComponentVariants	      "elec.passive.resistor, elec.passive.resistor_thermal"
+      ComponentVariantNames   "No thermal port, Show thermal port"
+      ClassName		      "Simscape variant"
+      SchemaVersion	      "1"
+      R			      "40"
+      R_unit		      "Ohm"
+      R_conf		      "compiletime"
+      R_tol		      "5"
+      R_tol_unit	      "1"
+      R_tol_conf	      "compiletime"
+      enable_R_tol	      "0"
+      enable_R_tol_unit	      "1"
+      enable_R_tol_conf	      "compiletime"
+      tol_distribution	      "1"
+      tol_distribution_unit   "1"
+      tol_distribution_conf   "compiletime"
+      nSigma		      "4"
+      nSigma_unit	      "1"
+      nSigma_conf	      "compiletime"
+      enable_operating_limits "0"
+      enable_operating_limits_unit "1"
+      enable_operating_limits_conf "compiletime"
+      operating_limit_action  "2"
+      operating_limit_action_unit "1"
+      operating_limit_action_conf "compiletime"
+      max_working_voltage     "100"
+      max_working_voltage_unit "V"
+      max_working_voltage_conf "compiletime"
+      power_rating	      "1"
+      power_rating_unit	      "W"
+      power_rating_conf	      "compiletime"
+      enable_faults	      "0"
+      enable_faults_unit      "1"
+      enable_faults_conf      "compiletime"
+      fault_action	      "1"
+      fault_action_unit	      "1"
+      fault_action_conf	      "compiletime"
+      R_faulted		      "inf"
+      R_faulted_unit	      "Ohm"
+      R_faulted_conf	      "compiletime"
+      enable_temporal_fault   "0"
+      enable_temporal_fault_unit "1"
+      enable_temporal_fault_conf "compiletime"
+      t_fault		      "1"
+      t_fault_unit	      "s"
+      t_fault_conf	      "compiletime"
+      enable_behavioral_fault "0"
+      enable_behavioral_fault_unit "1"
+      enable_behavioral_fault_conf "compiletime"
+      max_permissible_current "1"
+      max_permissible_current_unit "A"
+      max_permissible_current_conf "compiletime"
+      t_fail_on_current	      "1"
+      t_fail_on_current_unit  "s"
+      t_fail_on_current_conf  "compiletime"
+      noise_mode	      "0"
+      noise_mode_unit	      "1"
+      noise_mode_conf	      "compiletime"
+      sample_time	      "1e-3"
+      sample_time_unit	      "s"
+      sample_time_conf	      "compiletime"
+      repeatability	      "1"
+      repeatability_unit      "1"
+      repeatability_conf      "compiletime"
+      auto_seed		      "4177860224"
+      auto_seed_unit	      "1"
+      auto_seed_conf	      "compiletime"
+      user_seed		      "0"
+      user_seed_unit	      "1"
+      user_seed_conf	      "compiletime"
+      Tdevice		      "25"
+      Tdevice_unit	      "degC"
+      Tdevice_conf	      "compiletime"
+      alpha		      "3.93e-3"
+      alpha_unit	      "1/K"
+      alpha_conf	      "compiletime"
+      Tmeas		      "25"
+      Tmeas_unit	      "degC"
+      Tmeas_conf	      "compiletime"
+      thermal_mass	      "100"
+      thermal_mass_unit	      "J/K"
+      thermal_mass_conf	      "compiletime"
+      power_derating_T1	      "70"
+      power_derating_T1_unit  "degC"
+      power_derating_T1_conf  "compiletime"
+      power_derating_T2	      "155"
+      power_derating_T2_unit  "degC"
+      power_derating_T2_conf  "compiletime"
+      operating_temperature_range_vec "[-50, 150]"
+      operating_temperature_range_vec_unit "degC"
+      operating_temperature_range_vec_conf "compiletime"
+      temperature_specify     off
+      temperature_priority    "High"
+      temperature	      "298.15"
+      temperature_unit	      "K"
+      temperature_nominal_specify off
+      temperature_nominal_unit "K"
+      temperature_nominal_value	"1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "R4"
+      SID		      "39"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [251, -35, 279, 5]
+      ZOrder		      48
+      BlockRotation	      90
+      NamePlacement	      "alternate"
+      LibraryVersion	      "9000000.1"
+      SourceBlock	      "elec_lib/Passive Devices/Resistor"
+      SourceType	      "Resistor"
+      SourceProductName	      "Simscape Electronics"
+      SourceProductBaseCode   "SN"
+      LogSimulationData	      off
+      SourceFile	      "elec.passive.resistor"
+      ComponentPath	      "elec.passive.resistor"
+      ComponentVariants	      "elec.passive.resistor, elec.passive.resistor_thermal"
+      ComponentVariantNames   "No thermal port, Show thermal port"
+      ClassName		      "Simscape variant"
+      SchemaVersion	      "1"
+      R			      "323"
+      R_unit		      "Ohm"
+      R_conf		      "compiletime"
+      R_tol		      "5"
+      R_tol_unit	      "1"
+      R_tol_conf	      "compiletime"
+      enable_R_tol	      "0"
+      enable_R_tol_unit	      "1"
+      enable_R_tol_conf	      "compiletime"
+      tol_distribution	      "1"
+      tol_distribution_unit   "1"
+      tol_distribution_conf   "compiletime"
+      nSigma		      "4"
+      nSigma_unit	      "1"
+      nSigma_conf	      "compiletime"
+      enable_operating_limits "0"
+      enable_operating_limits_unit "1"
+      enable_operating_limits_conf "compiletime"
+      operating_limit_action  "2"
+      operating_limit_action_unit "1"
+      operating_limit_action_conf "compiletime"
+      max_working_voltage     "100"
+      max_working_voltage_unit "V"
+      max_working_voltage_conf "compiletime"
+      power_rating	      "1"
+      power_rating_unit	      "W"
+      power_rating_conf	      "compiletime"
+      enable_faults	      "0"
+      enable_faults_unit      "1"
+      enable_faults_conf      "compiletime"
+      fault_action	      "1"
+      fault_action_unit	      "1"
+      fault_action_conf	      "compiletime"
+      R_faulted		      "inf"
+      R_faulted_unit	      "Ohm"
+      R_faulted_conf	      "compiletime"
+      enable_temporal_fault   "0"
+      enable_temporal_fault_unit "1"
+      enable_temporal_fault_conf "compiletime"
+      t_fault		      "1"
+      t_fault_unit	      "s"
+      t_fault_conf	      "compiletime"
+      enable_behavioral_fault "0"
+      enable_behavioral_fault_unit "1"
+      enable_behavioral_fault_conf "compiletime"
+      max_permissible_current "1"
+      max_permissible_current_unit "A"
+      max_permissible_current_conf "compiletime"
+      t_fail_on_current	      "1"
+      t_fail_on_current_unit  "s"
+      t_fail_on_current_conf  "compiletime"
+      noise_mode	      "0"
+      noise_mode_unit	      "1"
+      noise_mode_conf	      "compiletime"
+      sample_time	      "1e-3"
+      sample_time_unit	      "s"
+      sample_time_conf	      "compiletime"
+      repeatability	      "1"
+      repeatability_unit      "1"
+      repeatability_conf      "compiletime"
+      auto_seed		      "1407696837"
+      auto_seed_unit	      "1"
+      auto_seed_conf	      "compiletime"
+      user_seed		      "0"
+      user_seed_unit	      "1"
+      user_seed_conf	      "compiletime"
+      Tdevice		      "25"
+      Tdevice_unit	      "degC"
+      Tdevice_conf	      "compiletime"
+      alpha		      "3.93e-3"
+      alpha_unit	      "1/K"
+      alpha_conf	      "compiletime"
+      Tmeas		      "25"
+      Tmeas_unit	      "degC"
+      Tmeas_conf	      "compiletime"
+      thermal_mass	      "100"
+      thermal_mass_unit	      "J/K"
+      thermal_mass_conf	      "compiletime"
+      power_derating_T1	      "70"
+      power_derating_T1_unit  "degC"
+      power_derating_T1_conf  "compiletime"
+      power_derating_T2	      "155"
+      power_derating_T2_unit  "degC"
+      power_derating_T2_conf  "compiletime"
+      operating_temperature_range_vec "[-50, 150]"
+      operating_temperature_range_vec_unit "degC"
+      operating_temperature_range_vec_conf "compiletime"
+      temperature_specify     off
+      temperature_priority    "High"
+      temperature	      "298.15"
+      temperature_unit	      "K"
+      temperature_nominal_specify off
+      temperature_nominal_unit "K"
+      temperature_nominal_value	"1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Solver\nConfiguration"
+      SID		      "1"
+      Ports		      [0, 0, 0, 0, 0, 0, 1]
+      Position		      [-75, 39, -30, 71]
+      ZOrder		      4
+      LibraryVersion	      "2.0"
+      SourceBlock	      "nesl_utility/Solver\nConfiguration"
+      SourceType	      "Solver\nConfiguration"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      ContentPreviewEnabled   off
+      PhysicalDomain	      "network_engine_domain"
+      SubClassName	      "solver"
+      LeftPortType	      "input"
+      RightPortType	      "generic"
+      Accelerate	      off
+      Tones		      "[]"
+      Harmonics		      "[]"
+      SimulateNoise	      off
+      Profile		      off
+      UseLocalSampling	      off
+      EnableSwitchedLinearOptims on
+      FrequencyDomain	      off
+      UseCCode		      off
+      RelTol		      "0.001"
+      AbsTol		      "1e-06"
+      MinStep		      "1e-09"
+      ToWorkspace	      off
+      RevertToSquareIcSolve   off
+      NumHomotopyIterations   "100"
+      PhasorMode	      off
+      PhasorModeNumHarmonics  "1"
+      DoDC		      off
+      ResidualTolerance	      "1e-09"
+      UseLocalSolver	      off
+      LocalSolverChoice	      "NE_BACKWARD_EULER_ADVANCER"
+      LocalSolverSampleTime   "0.001"
+      DoFixedCost	      off
+      MaxNonlinIter	      "3"
+      MaxModeIter	      "2"
+      LinearAlgebra	      "Sparse"
+      DelaysMemoryBudget      "1024"
+      AutomaticFiltering      on
+      FilteringTimeConstant   "0.001"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Voltage Sensor"
+      SID		      "60"
+      Ports		      [0, 0, 0, 0, 0, 1, 2]
+      Position		      [55, 185, 95, 225]
+      ZOrder		      73
+      BlockRotation	      270
+      BlockMirror	      on
+      LibraryVersion	      "9000000.1"
+      SourceBlock	      "fl_lib/Electrical/Electrical Sensors/Voltage Sensor"
+      SourceType	      "Voltage Sensor"
+      SourceProductName	      "Simscape"
+      SourceProductBaseCode   "SS"
+      LogSimulationData	      off
+      SourceFile	      "foundation.electrical.sensors.voltage"
+      ComponentPath	      "foundation.electrical.sensors.voltage"
+      ComponentVariants	      "foundation.electrical.sensors.voltage"
+      ComponentVariantNames   "voltage"
+      ClassName		      "voltage"
+      SchemaVersion	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Voltage Source\n3 V @ 1000 Hz"
+      SID		      "24"
+      Ports		      [0, 0, 0, 0, 0, 1, 1]
+      Position		      [-59, 225, -31, 265]
+      ZOrder		      37
+      BlockRotation	      270
+      BlockMirror	      on
+      LibraryVersion	      "9000000.1"
+      SourceBlock	      "elec_lib/Sources/Voltage Source"
+      SourceType	      "Voltage Source"
+      SourceProductName	      "Simscape Electronics"
+      SourceProductBaseCode   "SN"
+      LogSimulationData	      off
+      SourceFile	      "elec.sources.voltage_source"
+      ComponentPath	      "elec.sources.voltage_source"
+      ComponentVariants	      "elec.sources.voltage_source"
+      ComponentVariantNames   "voltage_source"
+      ClassName		      "voltage_source"
+      SchemaVersion	      "1"
+      dc_voltage	      "0"
+      dc_voltage_unit	      "V"
+      dc_voltage_conf	      "compiletime"
+      ac_voltage	      "3"
+      ac_voltage_unit	      "V"
+      ac_voltage_conf	      "compiletime"
+      ac_shift		      "0"
+      ac_shift_unit	      "rad"
+      ac_shift_conf	      "compiletime"
+      ac_frequency	      "1000"
+      ac_frequency_unit	      "Hz"
+      ac_frequency_conf	      "compiletime"
+      noise_mode	      "0"
+      noise_mode_unit	      "1"
+      noise_mode_conf	      "compiletime"
+      PSD		      "1000"
+      PSD_unit		      "V^2/Hz"
+      PSD_conf		      "compiletime"
+      repeatability	      "1"
+      repeatability_unit      "1"
+      repeatability_conf      "compiletime"
+      auto_seed		      "2390878736"
+      auto_seed_unit	      "1"
+      auto_seed_conf	      "compiletime"
+      user_seed		      "0"
+      user_seed_unit	      "1"
+      user_seed_conf	      "compiletime"
+      sample_time	      "1e-3"
+      sample_time_unit	      "s"
+      sample_time_conf	      "compiletime"
+      i_specify		      off
+      i_priority	      "None"
+      i			      "0"
+      i_unit		      "A"
+      i_nominal_specify	      off
+      i_nominal_unit	      "A"
+      i_nominal_value	      "1"
+      v_specify		      off
+      v_priority	      "None"
+      v			      "0"
+      v_unit		      "V"
+      v_nominal_specify	      off
+      v_nominal_unit	      "V"
+      v_nominal_value	      "1"
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      61
+      SrcBlock		      "Voltage Source\n3 V @ 1000 Hz"
+      SrcPort		      LConn1
+      Points		      [0, -62; 62, 0; 0, -1]
+      Branch {
+	ConnectType		"DEST_DEST"
+	Points			[74, 147; -57, 0]
+	Branch {
+	  ConnectType		  "SRC_DEST"
+	  SrcBlock		  "C1"
+	  SrcPort		  RConn1
+	  Points		  [-5, 0; 0, 30; -131, 0; 0, -3]
+	}
+	Branch {
+	  ConnectType		  "SRC_DEST"
+	  SrcBlock		  "Voltage Sensor"
+	  SrcPort		  LConn1
+	  Points		  [0, -23; -1, 0]
+	}
+	Branch {
+	  ConnectType		  "SRC_SRC"
+	  Points		  [0, -72]
+	  DstBlock		  "Current Sensor"
+	  DstPort		  LConn1
+	}
+      }
+      Branch {
+	ConnectType		"DEST_SRC"
+	Points			[0, -92]
+	DstBlock		"Solver\nConfiguration"
+	DstPort			RConn1
+      }
+    }
+    Line {
+      ZOrder		      66
+      SrcBlock		      "PS-Simulink\nConverter"
+      SrcPort		      1
+      Points		      [50, 0; 0, 5]
+      DstBlock		      "Input Current Sensor"
+      DstPort		      1
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      80
+      SrcBlock		      "R3"
+      SrcPort		      LConn1
+      Points		      [0, 0]
+      Branch {
+	ConnectType		"DEST_DEST"
+	SrcBlock		"NPN Bipolar\nTransistor\n"
+	SrcPort			LConn1
+	Points			[-80, 0]
+      }
+      Branch {
+	ConnectType		"DEST_SRC"
+	DstBlock		"R4"
+	DstPort			RConn1
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      81
+      SrcBlock		      "R1"
+      SrcPort		      LConn1
+      Points		      [0, 0]
+      Branch {
+	ConnectType		"DEST_SRC"
+	DstBlock		"R2\n"
+	DstPort			RConn1
+      }
+      Branch {
+	ConnectType		"DEST_DEST"
+	SrcBlock		"PNP \nBipolar\nTransistor"
+	SrcPort			LConn1
+	Points			[-65, 0]
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      112
+      SrcBlock		      "Current Sensor"
+      SrcPort		      RConn1
+      Points		      [30, 0; 0, -135]
+      DstBlock		      "PS-Simulink\nConverter"
+      DstPort		      LConn1
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      85
+      SrcBlock		      "C1"
+      SrcPort		      LConn1
+      Points		      [0, 0]
+      Branch {
+	ConnectType		"DEST_DEST"
+	SrcBlock		"R2\n"
+	SrcPort			LConn1
+	Points			[0, -25; -5, 0]
+      }
+      Branch {
+	ConnectType		"DEST_SRC"
+	Points			[0, -30]
+	Branch {
+	  ConnectType		  "DEST_DEST"
+	  SrcBlock		  "Current Sensor"
+	  SrcPort		  RConn2
+	  Points		  [26, 0; 0, -3; 79, 0; 0, 8]
+	}
+	Branch {
+	  ConnectType		  "DEST_SRC"
+	  DstBlock		  "R3"
+	  DstPort		  RConn1
+	}
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      71
+      SrcBlock		      "PNP \nBipolar\nTransistor"
+      SrcPort		      RConn1
+      Points		      [33, 0; 0, -85]
+      Branch {
+	ConnectType		"DEST_DEST"
+	Points			[465, 120; -22, 0]
+	Branch {
+	  ConnectType		  "SRC_DEST"
+	  SrcBlock		  "Output Voltage Sensor1"
+	  SrcPort		  LConn1
+	  Points		  [-284, 0; 0, 90; -1, 0]
+	}
+	Branch {
+	  ConnectType		  "SRC_DEST"
+	  SrcBlock		  "Output Current Sensor1"
+	  SrcPort		  LConn1
+	  Points		  [0, 0]
+	}
+      }
+      Branch {
+	ConnectType		"DEST_SRC"
+	Points			[0, -85]
+	DstBlock		"NPN Bipolar\nTransistor\n"
+	DstPort			RConn2
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      98
+      SrcBlock		      "PNP \nBipolar\nTransistor"
+      SrcPort		      RConn2
+      Points		      [5, 0; 0, 315]
+      Branch {
+	ConnectType		"DEST_DEST"
+	SrcBlock		"R1"
+	SrcPort			RConn1
+	Points			[0, 265; 130, 0; 0, -5]
+      }
+      Branch {
+	ConnectType		"DEST_DEST"
+	SrcBlock		"-5 V"
+	SrcPort			LConn1
+	Points			[-10, 0]
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      89
+      SrcBlock		      "NPN Bipolar\nTransistor\n"
+      SrcPort		      RConn1
+      Points		      [30, 0; 0, -120]
+      Branch {
+	ConnectType		"DEST_DEST"
+	SrcBlock		"R4"
+	SrcPort			LConn1
+	Points			[0, -69; 170, 0; 0, 4]
+      }
+      Branch {
+	ConnectType		"DEST_DEST"
+	SrcBlock		"5 V\n"
+	SrcPort			LConn1
+	Points			[-60, 0]
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      74
+      SrcBlock		      "Voltage Source\n3 V @ 1000 Hz"
+      SrcPort		      RConn1
+      Points		      [0, 76; 120, 0]
+      Branch {
+	ConnectType		"DEST_SRC"
+	Points			[10, 0]
+	DstBlock		"Voltage Sensor"
+	DstPort			RConn2
+      }
+      Branch {
+	ConnectType		"DEST_DEST"
+	Points			[645, 427; -570, 0; 0, -71]
+	Branch {
+	  ConnectType		  "SRC_SRC"
+	  Points		  [0, 123]
+	  DstBlock		  "-5 V"
+	  DstPort		  RConn1
+	}
+	Branch {
+	  ConnectType		  "SRC_SRC"
+	  Points		  [0, -181]
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    Points		    [0, -361]
+	    DstBlock		    "5 V\n"
+	    DstPort		    RConn1
+	  }
+	  Branch {
+	    ConnectType		    "DEST_SRC"
+	    Points		    [115, 0]
+	    Branch {
+	      ConnectType	      "DEST_DEST"
+	      SrcBlock		      "Output Voltage Sensor1"
+	      SrcPort		      RConn2
+	      Points		      [0, 146]
+	    }
+	    Branch {
+	      ConnectType	      "DEST_SRC"
+	      Points		      [90, 0]
+	      DstBlock		      "R Load\n"
+	      DstPort		      RConn1
+	    }
+	  }
+	}
+	Branch {
+	  ConnectType		  "SRC_DEST"
+	  SrcBlock		  "Electrical \nReference1"
+	  SrcPort		  LConn1
+	  Points		  [0, -23; -250, 0]
+	}
+      }
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      127
+      SrcBlock		      "Output Current Sensor1"
+      SrcPort		      RConn2
+      DstBlock		      "R Load\n"
+      DstPort		      LConn1
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      117
+      SrcBlock		      "Voltage Sensor"
+      SrcPort		      RConn1
+      Points		      [0, 73; 566, 0; 0, 22]
+      DstBlock		      "PS-Simulink\nConverter4"
+      DstPort		      LConn1
+    }
+    Line {
+      ZOrder		      116
+      SrcBlock		      "PS-Simulink\nConverter4"
+      SrcPort		      1
+      DstBlock		      "Input Voltage Scope\n"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      125
+      SrcBlock		      "PS-Simulink\nConverter5"
+      SrcPort		      1
+      Points		      [50, 0; 0, 5]
+      DstBlock		      "Output Current Scope"
+      DstPort		      1
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      126
+      SrcBlock		      "Output Current Sensor1"
+      SrcPort		      RConn1
+      Points		      [63, 0; 0, -100]
+      DstBlock		      "PS-Simulink\nConverter5"
+      DstPort		      LConn1
+    }
+    Line {
+      LineType		      "Connection"
+      ZOrder		      144
+      SrcBlock		      "Output Voltage Sensor1"
+      SrcPort		      RConn1
+      Points		      [0, 10]
+      DstBlock		      "PS-Simulink\nConverter6"
+      DstPort		      LConn1
+    }
+    Line {
+      ZOrder		      143
+      SrcBlock		      "PS-Simulink\nConverter6"
+      SrcPort		      1
+      DstBlock		      "Output Voltage Scope1"
+      DstPort		      1
+    }
+  }
+}
